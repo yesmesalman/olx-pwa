@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OLX Pakistan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="../images/icons/icon-256x256.png" />
+	<link rel="stylesheet" type="text/css" href="../css/all.css">
+</head>
+<body id="post-page" onload="editLoads();">
+	<div class="page-container" style="background: #FF7700;">
+		<header class="site-header">
+			<a href="Javascript:void(0)" id="back-btn">
+				<svg aria-hidden="true" data-prefix="fas" data-icon="angle-left" class="svg-inline--fa fa-angle-left fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="#fff" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path></svg>
+			</a>
+			<div class="logo">
+				<a href="../index.html"><img src="../images/icons/icon-128x128.png"></a>
+			</div>
+			<div class="tag-line">
+				<span>Pakistan's Largest Marketplace</span>
+			</div>
+		</header>
+	</div>
+	<div class="page-container" style="margin-top: 15px;margin-bottom: 25px;">
+		<div class="postDIV" id="postDIV">
+			<h3>Submit ad</h3>
+			<form id="adFORM" onsubmit="return adFormSubmitEdit()">
+				<label for="title">Ad Title*</label>
+				<input type="text" id="title">
+				<label for="category">Category*</label>
+				<select type="text" id="category"></select>
+				<label for="desc">Ad Description*</label>
+				<textarea id="desc"></textarea>
+				<label for="pictureLBL">Picture</label>
+				<label for="picture" id="pictureLBL">Picture</label>
+				<input type="file" name="" id="picture">
+				<label for="price">Price*</label>
+				<input type="number" id="price" min="1">
+				<label for="name">Name*</label>
+				<input type="text" id="name">
+				<label for="phone">Phone*</label>
+				<input type="text" id="phone">
+				<div id="error-box">
+				</div>
+				<button>Submit</button>
+			</form>
+		</div>
+	</div>
+	<div id="loading"></div>
+
+</body>
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+<!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
+<!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-functions.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-storage.js"></script>
+<script src="../js/index.js"></script>
+</html>

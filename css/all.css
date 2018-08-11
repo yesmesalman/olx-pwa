@@ -1,0 +1,726 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+}
+
+h2,h1,h3,h4,h5,h6{
+	font-weight: 300;
+}
+#pictureLBL svg{
+	height: 24px;
+    margin: -6px;
+    margin-left: 5px;
+}
+
+#adDiv h3{
+	margin: 10px;
+}
+.ads-content h2{
+	margin: 10px;
+}
+.inboxBox{
+	margin-top: 5px;
+}
+.inboxBox h1{
+	margin:10px;
+}
+.chatDiv{
+	width: 100%;
+    height: 50px;
+    margin-top: 3px;
+    border-bottom: 1px solid #ccc;
+}
+.chatDiv div{
+	float: left;
+}
+.chatDiv .rname{
+	padding-top: 13px;
+}
+.chatDiv .date{
+	padding-top: 18px;
+	float: right;
+}
+.chatDiv .inboxAd{
+    padding-top: 10px;
+    float: right;
+    padding-bottom: 12px;
+    margin: 6px;
+    color: #ffffff;
+    background: #ff7700;
+}
+.chatDiv .rname span{
+	font-size: 16px;
+	margin:8px;
+	color:#000;
+}
+.chatDiv .date span{
+	font-size: 14px;
+	margin:8px;
+	color:#000;
+}
+.chatDiv .inboxAd span{
+	font-size: 14px;
+	margin:8px;
+}
+.chatDiv svg{
+	height: 42px;
+    margin: 4px;
+}
+#messageBox{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#messageBox .header{
+	flex: 2;
+}
+#messageBox .messageHeader{
+	flex: 1;
+}
+#messageBox .messageContent{
+	flex: 8;
+	overflow: scroll;
+}
+#messageBox .messageContent .chatBox{
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+}
+#messageBox .messageContent .chatBox .left{
+	background: #FF7700;
+	border-radius: 16px 16px 16px 0px;
+}
+#messageBox .messageContent .chatBox .right{
+	background: #4E4B4B;
+	border-radius: 16px 16px 0px 16px;
+}
+#messageBox .messageContent .chatBox .left, #messageBox .messageContent .chatBox .right{
+	color:#fff;
+	width: 60%;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+#messageBox .messageFooter{
+	flex: 1;
+	padding-left: 150px;
+    padding-right: 150px;
+}
+#messageBox .messageFooter input{
+	border: 1px solid #979191;
+    height: 27px;
+    margin: 5px;
+    border-radius: 69px;
+    width: 89%;
+    /*width: 242px;*/
+    padding: 5px;
+    margin-top: 6px;
+    font-size: 18px;
+}
+#messageBox .messageFooter button{
+	    height: 81%;
+    background: #ff7700;
+    width: 78px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 85px;
+    border: none;
+    letter-spacing: 2px;
+}
+#reciever-name{
+	padding: 10px;
+	font-size: 25px;
+	text-transform: capitalize;
+}
+
+#ad-title, #categoryName{
+	margin: 10px;
+}
+#message-cont{
+	border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 70%;
+    margin-left: 15%;
+}
+.sendMSG{
+	border: 1px solid #ff7700;
+    border-radius: 2px;
+    padding: 6px 14px;
+    background: #fff;
+    color: #ff7700;
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.page-container{
+	padding: 0 150px;
+}
+a{
+	color: #ff7700;
+}
+a:hover{
+	color: #cb640a;
+}
+#items{
+	padding-left: 153px;
+	padding-right: 153px;
+	margin-bottom: 100px;
+}
+#loading {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 248, 248, 0.5);
+  background-image: url("../images/loading.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.olx-btn{
+	border: none;
+    background: #ff7700;
+    color: #fff;
+    padding: 10px 30px;
+}
+.right{
+	float: right;
+}
+.left{
+	float:left;
+}
+header.site-header{
+	display: block;
+    background: #FF7700;
+    height: 60px;
+}
+header.site-header div{
+	float: left;
+}
+header.site-header .logo{
+	padding: 3px 0px 0px 10px;
+}
+header.site-header .logo img{
+	height: 50px;
+}
+header.site-header .tag-line{
+	padding-top: 22px;
+	padding-left: 6px;
+	color: #fff;
+	font-style: italic;
+}
+.site-header #logout-btn svg, .site-header #message-btn svg{
+	height: 32px;
+    float: right;
+    margin: 15px 5px;
+}
+.site-header #back-btn svg{
+	height: 42px;
+    float: left;
+    margin: 10px 6px;
+    display: none;
+}
+.loginBOX{
+    height: 150px;
+    width: 540px;
+    margin: 60px auto;
+}
+
+.loginBOX label, .loginBOX input{
+	display: block;
+}
+.loginBOX label{
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+.loginBOX input{
+	height: 34px;
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    padding: 0px 0px 0px 6px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.olx-btn{
+	font-size: 21px;
+	border: none;
+    background: #ff7700;
+    color: #fff;
+    padding: 10px 30px;
+}
+#error-box{
+	display: none;
+	color: red;
+    padding: 18px;
+    border: 1px solid red;
+    margin: 19px 0px;
+    box-shadow: 1px 1px 24px 0px red;
+}
+
+.regBOX{
+    height: 150px;
+    width: 540px;
+    margin: 10px auto;
+}
+
+.regBOX label, .regBOX input{
+	display: block;
+}
+.regBOX label{
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+.regBOX input{
+	height: 34px;
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    padding: 0px 0px 0px 6px;
+    font-size: 29px;
+    margin-bottom: 10px;
+}
+.adBTN{
+	background: #fff;
+    border: none;
+    color: #ff7700;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 3px;
+    font-weight: 600;
+    margin: 13px;
+}
+.searchBAR{
+	width: 100%;
+    background: #fff;
+    height: 50px;
+    float: right;
+}
+.searchBAR form input{
+	height: 30px;
+    margin: 5px 0px 0px 5px;
+    width: 82%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.searchBAR form button{
+	border: 1px solid #ff7700;
+    border-radius: 2px;
+    padding: 6px 14px;
+    background: #fff;
+    color: #ff7700;
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.homeCategory{
+	background: #f3f3f375;
+    margin: 3px;
+    height: 166px;
+    width: 15%;
+    float: left;
+    border: 1px solid #cccccc7d;
+    font-size: 12px;
+    border-radius: 5px;
+    color: #6f6e6d;
+}
+.homeCategory center a svg{
+	height: 110px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.userICON{
+	float: right;
+    margin: 9px 5px 0px 0px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    height: 31px;
+    width: 35px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.homeLOGINBTNS{
+	padding: 22px 14px 0px 14px;
+}
+.homeLOGINBTNS a{
+	background: #fff;
+    padding: 6px 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 5px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.postDIV{
+	padding: 15px;
+    border: 1px solid #ccc;
+}
+.postDIV h3{
+	font-style: italic;
+}
+#adFORM label, #adFORM input{
+	display: block;
+}
+#adFORM label{
+	margin-bottom: 6px;
+	font-size: 14px;
+}
+#adFORM input, #adFORM select{
+	margin-bottom: 12px;
+	font-size: 14px;
+}
+#adFORM input, #adFORM select{
+	width: 600px;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-radius:3px; 
+}
+#adFORM textarea{
+	width: 600px;
+	height: 80px;
+	border: 1px solid #ccc;
+	border-radius:3px; 	
+	margin-bottom: 12px;	
+}
+#adFORM button{
+	background: #fff;
+    border: none;
+    color: #ff7700;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 3px;
+    font-weight: 600;
+    margin: 13px;
+    border: 1px solid #ff7700;
+}
+#adFORM input[type="file"]{
+	display: none;
+}
+#adFORM #pictureLBL{
+	border: 1px solid #ff7700;
+    border-radius: 2px;
+    padding: 6px 14px;
+    background: #fff;
+    color: #ff7700;
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 14px;
+}
+.navbarDIV li{
+	list-style-type: none;
+    display: inline-block;
+    margin-top: 15px;
+    float: left;
+}
+.navbarDIV li a{
+    padding: 15px 21px;
+    font-weight: 600;
+    text-decoration: none;
+    font-style: italic;
+}
+.navbarDIV li a:hover{
+	background: #FF7700;
+	color: #fff;
+}
+.adDiv{
+	padding: 15px;
+}
+.ad{
+	float: left;
+    height: 300px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin-right: 13px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: -1px 3px 29px -4px rgba(0, 0, 0, 0.31);
+}
+.ad .imageBx{
+	height: 200px;
+    width: 200px;
+    text-align: center;
+}
+.ad .imageBx img{
+    max-height: 94%;
+    margin-top: 3%;
+    max-width: 100%;
+}
+.ad .detailBx{
+	height: 100px;
+    width: 200px;
+}
+.ad .detailBx{
+	height: 100px;
+    width: 200px;
+}
+.ad .detailBx .title{
+	height: 60px;
+    padding-left: 5px;
+    font-size: 15px;
+    padding-right: 5px;
+    font-style: italic;
+}
+.ad .detailBx .title span{
+	text-decoration: none;
+}
+.ad .detailBx .title{
+	overflow: hidden;
+}
+.ad .detailBx .rate{
+	height: 40px;
+}
+.ad .detailBx .rate div{
+	width: 45%;
+	float: left;
+	font-size: 14px;
+    margin: 5px;
+    padding-top: 6px;
+}
+.ad .detailBx .rate div svg{
+	height: 22px;
+    float: right;
+}
+.inner-div-ad{
+    float: left;
+    padding: 20px;
+    width: 44%;
+    margin: 10px;
+}
+.inner-div-ad img{
+	max-width: 100%;
+}
+#ad-table{
+	width: 100%;
+}
+#ad-table tr{
+	width: 100%;
+}
+#ad-table td{
+	font-size: 12px;
+	width: 50%;
+	padding:5px;
+}
+#ad-desc{
+	font-size:13px;
+}
+.inner-div-ad div{
+	float: left;
+}
+.usernameAD{
+    padding: 5px;
+}
+.usernameDiv{
+	display: block;
+	width: 100%;
+}
+#user-name{
+	text-transform: capitalize;
+	font-size: 25px
+}
+
+
+
+
+/*Mobile*/
+@media only screen and (max-width: 600px) {
+   	#messageBox .messageFooter{
+		padding-left: 0px;
+	    padding-right: 0px;
+	}
+   	#messageBox .messageFooter input{
+    	width: 242px;
+	}
+   .site-header #back-btn svg{
+	    display: block;
+	}
+   .page-container{
+   		padding: 0px;
+   		width: 100%;
+	}
+	.loginBOX{
+		margin-top: 70px;
+	    height: 150px;
+	    width: 90%;
+	    margin-left: 5%;
+	}
+	.loginBOX label, .loginBOX input{
+		display: block;
+	}
+	.loginBOX label{
+		margin-bottom: 5px;
+	}
+	.loginBOX input{
+		height: 30px;
+	    width: 100%;
+	    border-radius: 3px;
+	    border: 1px solid #ccc;
+	    padding: 0px 0px 0px 6px;
+	    font-size: 20px;
+	    margin-bottom: 10px;
+	}
+	.olx-btn{
+		font-size: 13px;
+	}
+	.regBOX{
+		margin-top: 5px;
+	    height: 150px;
+	    width: 90%;
+	    margin-left: 5%;
+	}
+	.regBOX label, .regBOX input{
+		display: block;
+	}
+	.regBOX label{
+		margin-bottom: 5px;
+	}
+	.regBOX input{
+		height: 30px;
+	    width: 100%;
+	    border-radius: 3px;
+	    border: 1px solid #ccc;
+	    padding: 0px 0px 0px 6px;
+	    font-size: 20px;
+	    margin-bottom: 10px;
+	}
+	.adBTN{
+		background: #fff;
+	    border: none;
+	    color: #ff7700;
+	    padding: 10px 15px;
+	    font-size: 15px;
+	    border-radius: 3px;
+	    font-weight: 600;
+	    margin: 13px;
+	}
+	.searchBAR{
+		width: 100%;
+	    height: 50px;
+	}
+	.homeCategory{
+		background: #f3f3f375;
+	    margin: 3px;
+	    height: 164px;
+	    width: 47%;
+	    float: left;
+	    border: 1px solid #cccccc7d;
+	    font-size: 12px;
+	    border-radius: 5px;
+	    color:#6f6e6d;
+	    margin-bottom: 20px;
+	}
+	.homeCategory center a svg{
+		height: 112px;
+	    display: block;
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+	}
+	.searchBAR form input{
+	    width: 220px;
+	    height: 27px;
+	    margin-top: 10px;
+	}
+	.searchBAR form button {
+	    padding: 7px 24px;
+	    font-size: 14px;
+	}
+	.homeLOGINBTNS{
+		width: 100%;
+    	padding: 10px 0px;
+	}
+	.homeLOGINBTNS a{
+		padding-left: 83px;
+	    text-transform: uppercase;
+	    padding: 0px;
+	    padding-left: 71px;
+	    text-decoration: none;
+	    text-transform: uppercase;
+	    margin-right: 5px;
+	    font-weight: 600;
+	}
+	#adFORM textarea {
+		width: 100%;
+	}
+	#adFORM input, #adFORM select {
+		width: 100%;
+	}
+	.postDIV{
+		margin: 15px;
+	}
+	.ad {
+	    height: 245px;
+	    float: left;
+	    width: 224px;
+	    border: 1px solid #ccc;
+	    border-radius: 7px;
+	    margin-left: 62px;
+	}
+	.ad .imageBx {
+	    height: 164px;
+    	width: 224px;
+    	text-align: center;
+	}
+	.ad .imageBx img{
+		height: 94%;
+	}
+	.ad .detailBx {
+	    height: 80px;
+    	width: 224px;
+	}
+	.ad .detailBx .rate {
+	    height: 42px;
+    	width: 106%;
+	}
+	.ad .detailBx .title {
+	    height: 37px;
+	    width: 73%;
+	}
+	.ad .detailBx .title {
+		margin-left: 22px;
+	}
+	.ad .detailBx .rate div {
+	    width: 41%;
+	    float: left;
+	    font-size: 14px;
+	    margin: 5px;
+	    padding-top: 6px;
+	    font-weight: bold;
+	    color: #ff7700;
+	}
+	.ad .detailBx .rate div svg {
+	    height: 22px;
+	    float: right;
+	}
+	.navbarDIV li:nth-child(1) {
+    	margin-left: -20px;
+	}
+	.navbarDIV li a{
+		font-weight: 600;
+	    text-decoration: none;
+	    font-style: italic;
+	    padding: 15px 5px;
+	}
+	.inner-div-ad {
+    	width: 82%;
+	}
+	.inner-div-ad{
+		text-align: center;
+	}
+	#items{
+		padding-left: 10px;
+	}
+}
+/*Mobile*/

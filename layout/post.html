@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OLX Pakistan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="../images/icons/icon-256x256.png" />
+	<link rel="stylesheet" type="text/css" href="../css/all.css">
+</head>
+<body id="post-page" onload="postLoads()">
+	<div class="page-container" style="background: #FF7700;">
+		<header class="site-header">
+			<div class="logo">
+				<a href="../index.html"><img src="../images/icons/icon-128x128.png"></a>
+			</div>
+			<div class="tag-line">
+				<span>Pakistan's Largest Marketplace</span>
+			</div>
+		</header>
+	</div>
+	<div class="page-container" style="margin-top: 15px;margin-bottom: 25px;">
+		<div class="postDIV" id="postDIV">
+			<h3>Submit ad</h3>
+			<form id="adFORM" onsubmit="return adFormSubmit()">
+				<label for="title">Ad Title*</label>
+				<input type="text" id="title">
+				<label for="category">Category*</label>
+				<select type="text" id="category"></select>
+				<label for="desc">Ad Description*</label>
+				<textarea id="desc"></textarea>
+				<label for="pictureLBL">Picture</label>
+				<label for="picture" id="pictureLBL">Picture</label>
+				<input type="file" name="" id="picture">
+				<label for="price">Price*</label>
+				<input type="number" id="price" min="1">
+				<label for="name">Name*</label>
+				<input type="text" id="name">
+				<label for="phone">Phone*</label>
+				<input type="text" id="phone">
+				<div id="error-box">
+					
+				</div>
+				<button>Submit</button>
+			</form>
+		</div>
+	</div>
+	<div id="loading"></div>
+
+</body>
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+<!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
+<!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-functions.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-storage.js"></script>
+<script src="../js/index.js"></script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OLX Pakistan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="../images/icons/icon-256x256.png" />
+	<link rel="stylesheet" type="text/css" href="../css/all.css">
+</head>
+<body id="reg-page" onload="regLoads()">
+	<div class="page-container" style="background: #FF7700;">
+		<header class="site-header">
+			<div class="logo">
+				<a href="../index.html"><img src="../images/icons/icon-128x128.png"></a>
+			</div>
+			<div class="tag-line">
+				<span>Pakistan's Largest Marketplace</span>
+			</div>
+		</header>
+	</div>
+	<div class="page-container">
+		<div class="regBOX">
+			<center>
+					<a href="../index.html"><img src="../images/icons/icon-128x128.png"></a>
+			</center>
+			<form name="myFORM" onsubmit="return custom_register();">
+				<label for="name">Full Name</label>
+				<input type="text" id="name" required>
+				<label for="email">Email</label>
+				<input type="email" id="email" required>
+				<label for="password">Password</label>
+				<input type="password" id="password" required>
+				<label for="repassword">Re-enter Password</label>
+				<input type="password" id="repassword" required>
+				<div id="error-box">
+					
+				</div>
+				<a href="login.html">have an account?</a>
+				<button id="login" class="olx-btn right">REGISTER</button>
+			</form>
+		</div>
+	</div>
+	<div id="loading"></div>
+</body>
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+<!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
+<!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-functions.js"></script>
+<script src="../js/index.js"></script>
+</html>
