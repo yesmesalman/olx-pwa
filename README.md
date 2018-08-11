@@ -42,3 +42,8 @@ Go to project > functions > index.js and paste this code and edit 'PASTE_YOUR_AU
       });
   });
 ```
+
+Deploy project on firebase and also deploy firebase functions and youre done :)
+
+### Contributors
+  - Salman <salmanmemon569@yahoo.com>
